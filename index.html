@@ -1,0 +1,82 @@
+<html lang="sa">
+
+<head>
+  <title>Sakam Online IDE</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- add icon link -->
+  <link rel="icon" href="sakam.png" type="image/x-icon" />
+  <meta name="description"
+    content=" world first programming language in ol chiki" />
+  <meta name="keywords"
+    content="sakam-lang, sakam, programming language, ol chiki, , Shivnath" />
+  <meta name="author" content="Shivnath" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sakam Online IDE" />
+  <meta property="og:description"
+    content=" world first programming language in ol chiki" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="Sakam Online IDE" />
+  <meta property="article:author" content="Shivnath" />
+  <meta property="article:tag"
+    content="sakam-lang, sakam, programming language, ol chiki, , Shivnath" />
+  <meta property="og:image" content="sakam.png" />
+  <meta name="twitter:card" content="" />
+  <meta name="twitter:description"
+    content="world first programming language in ol chiki" />
+  <meta name="twitter:title" content="Sakam Online IDE" />
+  <meta name="twitter:image" content="sakam.png" />
+  <meta name="twitter:creator" content="Shivnath" />
+</head>
+
+<body>
+  <header>
+    <h3>
+      Sakam IDE
+      <sub>  </sub>
+    </h3>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="editor-area">
+      <h3 style="color: rgb(255, 254, 254); float: left">EDITOR AREA</h3>
+      <span id="examples-wrapper">
+        <label for="examples-select" title="Click here to load the sample code">Example:</label>
+        <select name="examples" id="examples-select" title="Click here to load the sample code"></select>
+      </span>
+      <div id="editor" class="code-area"></div>
+      <button id="btn-run" title="Click here to run the code">Run</button>
+      <button id="btn-clear" title="Click here to clear the console area">Clear</button>
+    </div>
+    <div class="console-area">
+      <h3 style="color: grey"></h3>
+      <div id="output">
+        <ul id="console-logs"><li><pre class="log log--object">&gt; "output will come up here"</pre></li></ul>
+      </div>
+      <!--div class="hint-area">
+        <h3 style="color: grey">#KEYWORDS</h3>
+      </div-->
+    </div>
+  </div>
+  <!-- Required Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ace.min.js"
+    integrity="sha512-hDyKEpCc9jPn3u2VffFjScCtNqZI+BAbThAhhDYqqqZbxMqmTSNIgdU0OU9BRD/8wFxHIWLAo561hh9fW7j6sA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.14/ext-language_tools.min.js"
+    integrity="sha512-S7Whi8oQAQu/MK6AhBWufIJIyOvqORj+/1YDM9MaHeRalsZjzyYS7Usk4fsh+6J77PUhuk5v/BxaMDXRdWd1KA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="sakam.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/@ol chiki-coders/sanscript@1.1.8/sanscript.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/editor.js"></script>
+  <script src="js/editor-console.js"></script>
+</body>
+
+</html>
